@@ -1,7 +1,6 @@
 'use strict';
 
-angular.module('gateawayApp')
-    .controller('ContactCtrl', function ($scope) {
+gateAway_app.controller('ContactCtrl', function ($scope) {
         $scope.contactFormName = $scope.contactName;
         $scope.contactFormEmail = $scope.contactEmail;
         $scope.contactFormMessage = $scope.contactMessage;

@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js">
+<html class="no-js" ng-app="gateawayApp">
 <!--<![endif]-->
 
 <head>
@@ -25,7 +25,7 @@
     <!-- stylesheets -->
 </head>
 
-<body ng-app="gateawayApp">
+<body ng-controller="InitCtrl" ng-cloak>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -36,7 +36,7 @@
             <li class="navbar-inner-wrapper">
                 <div class="collapsible-header navbar-header">
                     <div class="row">
-                        <div class="col s8 offset-s2 center logo">gate<span class="fontawesome">&#xf17a;</span>away</div>
+                        <div class="col s8 offset-s2 center logo">gateaway</div>
                         <div class="col s2 right"><i class="material-icons">menu</i></div>
                     </div>
                 </div>
@@ -55,10 +55,10 @@
                 <div class="row">
                     <div class="col l6 s12">
                         <h5 class="white-text">Gateaway Travels LLC</h5>
-                        <p class="grey-text text-lighten-4">103, Kaveri Apartments, Kaveri Path, Mansarovar, Jaipur, 302020</p>
+                        <p class="grey-text text-lighten-4">104, Shree Shyam Residency, P.No. 14/15 Vaishali Elegance, Gandhi Path, Jaipur</p>
                     </div>
                     <div class="col l4 offset-l2 s12">
-                        <h5 class="white-text">Links</h5>
+<!--                        <h5 class="white-text">Links</h5>-->
                         <ul>
                             <li><a class="grey-text text-lighten-3" ui-sref="index">Home</a></li>
                             <li><a class="grey-text text-lighten-3" ui-sref="packages">Packages</a></li>
@@ -71,7 +71,7 @@
             <div class="footer-copyright">
                 <div class="container">
                     © 2017 Keshav Saini
-                    <a class="grey-text text-lighten-4 right" href="#!">Cheers!</a>
+                    <a class="grey-text text-lighten-4 right" href="http://www.gritfusion.com">Cheers!</a>
                 </div>
             </div>
         </footer>
@@ -83,6 +83,7 @@
     <script type="text/javascript" src="scripts/vendor/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="scripts/vendor/angular.js"></script>
     <script type="text/javascript" src="scripts/vendor/materialize.min.js"></script>
+    <script type="text/javascript" src="scripts/vendor/underscore.js"></script>
     <!-- angular dependencies -->
     <script type="text/javascript" src="scripts/vendor/angular-materialize.min.js"></script>
     <script src="scripts/vendor/ngStorage.js"></script>
@@ -94,6 +95,7 @@
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/controllers/contact-us.js"></script>
     <script src="scripts/controllers/bookings.js"></script>
+    <script src="scripts/controllers/packages.js"></script>
     <!-- app scripts -->
 </body>
 

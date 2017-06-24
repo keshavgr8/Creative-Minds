@@ -1,10 +1,5 @@
 'use strict';
 
-angular.module('gateawayApp')
-  .controller('BookingsCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+gateAway_app.controller('BookingsCtrl',['$scope', '_', '$http', '$localStorage', '$sessionStorage', function ($scope, _, $http, $localStorage, $sessionStorage) {
+    $scope.bookings = $sessionStorage.bookings;
+}]);

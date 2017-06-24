@@ -45,10 +45,14 @@ body {
 .navbar-links{
     padding: 0.5rem !important;
     line-height: 30px;
-    background-color: darkgray;
+    background-color: whitesmoke;
+}
+.navbar-links a{
+	color : teal;
 }
 .logo {
     font-size: 2.1rem;
+    font-weight: 100;
 }
 .fontawesome {
     font-family: FontAwesome;

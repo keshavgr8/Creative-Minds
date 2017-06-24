@@ -15,24 +15,6 @@ gateAway_app.config(function ($stateProvider, $urlRouterProvider) {
             url: '/',
             templateUrl: 'views/main.html',
             controller: 'MainCtrl',
-            //        views: {
-            //            service: {
-            //                templateUrl: '',
-            //                controller: ''
-            //            },
-            //            package: {
-            //                templateUrl: '',
-            //                controller: ''
-            //            },
-            //            topDestination: {
-            //                templateUrl: '',
-            //                controller: ''
-            //            },
-            //            advertisement: {
-            //                templateUrl: '',
-            //                controller: ''
-            //            }
-            //        }
         })
         .state('about-us', {
             url: '/about-us',
@@ -49,4 +31,25 @@ gateAway_app.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: 'views/bookings.html',
             controller: 'BookingsCtrl'
         })
+        .state('packages',{
+            url: '/packages',
+            templateUrl: 'views/packages.html',
+            controller: 'PackagesCtrl'
+        });
 });
+
+gateAway_app.controller('InitCtrl', ['$scope', '_', '$http', '$localStorage', '$sessionStorage', function ($scope, _, $http, $localStorage, $sessionStorage) {
+    $scope.package = $http.get('scripts/package.json')
+        .then(function (response) {
+            return $sessionStorage.package=response.data;
+        });
+//    console.log($scope.package);
+//    $sessionStorage.package = $scope.package;
+    console.log($sessionStorage.package);
+    $scope.destination = $http.get('scripts/destination.json')
+        .then(function (response) {
+            return $sessionStorage.destination=response.data;
+        });
+    
+    $sessionStorage.bookings = [];
+}]);
