@@ -1,0 +1,194 @@
+<div class="service-tab-wrapper">
+    <div class="row">
+        <div class="col s12">
+            <div class="card">
+                <div class="card-tabs">
+                    <ul tabs class="tabs-fixed-width">
+                        <li class="tab"><a class="active" href="#flight-service"><i class="material-icons">flight</i></a></li>
+                        <li class="tab"><a href="#hotel-service"><i class="material-icons">hotel</i></a></li>
+                    </ul>
+                </div>
+                <div class="card-content grey lighten-4">
+                    <div id="flight-service">
+                        <div class="row">
+                            <div class="col s12">
+                                <input name="flight-type" type="radio" id="one-way-flight" />
+                                <label for="one-way-flight">One Way</label>
+                                <input name="flight-type" type="radio" id="round-trip-flight" />
+                                <label for="round-trip-flight">Round Trip</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="input-field">
+                                    <input id="flight-from" type="text" class="validate">
+                                    <label for="flight-from">From</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="input-field">
+                                    <input id="flight-to" type="text" class="validate">
+                                    <label for="flight-to">To</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s6">
+                                <label for="depart-on">Depart On</label>
+                                <input ng-model="departDate" input-date id="depart-on" type="date" class="datepicker">
+                            </div>
+                            <div class="col s6">
+                                <label for="return-on">Return On</label>
+                                <input ng-model="returnDate" input-date id="return-on" type="date" class="datepicker">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <select material-select>
+                                    <option value="" disabled selected>Adults</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                                <label>12+ yrs</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <select material-select>
+                                    <option value="" disabled selected>Children</option>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                </select>
+                                <label>2-11 yrs</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <select material-select>
+                                    <option value="" disabled selected>Infants</option>
+                                    <option value="0">0</option>
+                                    <option value="1">2</option>
+                                </select>
+                                <label>Under 2 yrs</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 waves-effect waves-light btn center-align">Search Flight</div>
+                        </div>
+                    </div>
+                    <div id="hotel-service">
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="input-field">
+                                    <input id="hotel-city" type="text" placeholder="Enter a city name" class="validate">
+                                    <label for="hotel-city">City</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s6">
+                                <label for="check-in">Check-in</label>
+                                <input ng-model="checkInDate" input-date id="check-in" type="date" class="datepicker">
+                            </div>
+                            <div class="col s6">
+                                <label for="check-out">check-out</label>
+                                <input ng-model="checkOutDate" input-date id="check-out" type="date" class="datepicker">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <select material-select>
+                                    <option value="" disabled selected>Rooms</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                            <div class="input-field col s4">
+                                <select material-select>
+                                    <option value="" disabled selected>Adults</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                                <label>12+ yrs</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <select material-select>
+                                    <option value="" disabled selected>Children</option>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <label>0-11 yrs</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 waves-effect waves-light btn center-align">Find Hotels</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="featured-package-wrapper">
+    <div class="row">
+        <div class="col s12">
+            <div class="card small sticky-action">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/Spiti-Bike-Trip.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Spiti Valley<i class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-action">
+                    <a>Book Now!</a>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Spiti Valley<i class="material-icons right">close</i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    <p>3D/2N</p>
+                    <p>&#8377;6999 Per Person</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="top-destinations-wrapper">
+    <div class="top-destinations-carousel" carousel>
+        <a class="carousel-item"><img src="http://lorempixel.com/250/250/nature/1">
+            <p class="center-align flow-text carousel-caption">Shillong</p>
+        </a>
+        <a class="carousel-item"><img src="http://lorempixel.com/250/250/nature/2">
+            <p class="center-align flow-text carousel-caption">Kerala</p>
+        </a>
+        <a class="carousel-item"><img src="http://lorempixel.com/250/250/nature/3">
+            <p class="center-align flow-text carousel-caption">Himachal</p>
+        </a>
+        <a class="carousel-item"><img src="http://lorempixel.com/250/250/nature/4">
+            <p class="center-align flow-text carousel-caption">Macleodganj</p>
+        </a>
+        <a class="carousel-item"><img src="http://lorempixel.com/250/250/nature/5">
+            <p class="center-align flow-text carousel-caption">Goa</p>
+        </a>
+    </div>
+</div>
+<div class="advertisement-wrapper">
+    
+</div>
