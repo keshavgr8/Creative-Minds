@@ -40,25 +40,25 @@
                         <div class="col s2 right"><i class="material-icons">menu</i></div>
                     </div>
                 </div>
-                <div class="collapsible-body center navbar-links"><span><a ui-sref="index">Home</a></span></div>
+                <!--                <div class="collapsible-body center navbar-links"><span><a ui-sref="index">Home</a></span></div>-->
                 <div class="collapsible-body center navbar-links"><span><a ui-sref="packages">Packages</a></span></div>
                 <div class="collapsible-body center navbar-links"><span><a ui-sref="bookings">My Bookings</a></span></div>
-                <div class="collapsible-body center navbar-links"><span><a ui-sref="about-us">About Us</a></span></div>
+                <!--                <div class="collapsible-body center navbar-links"><span><a ui-sref="about-us">About Us</a></span></div>-->
                 <div class="collapsible-body center navbar-links"><span><a ui-sref="contact-us">Support</a></span></div>
             </li>
         </ul>
     </nav>
     <ui-view></ui-view>
     <footer>
-        <footer class="page-footer">
+        <footer class="page-footer flow-text">
             <div class="container">
                 <div class="row">
-                    <div class="col l6 s12">
+                    <div class="col s12">
                         <h5 class="white-text">Gateaway Travels LLC</h5>
                         <p class="grey-text text-lighten-4">104, Shree Shyam Residency, P.No. 14/15 Vaishali Elegance, Gandhi Path, Jaipur</p>
                     </div>
-                    <div class="col l4 offset-l2 s12">
-<!--                        <h5 class="white-text">Links</h5>-->
+                    <div class="col s12">
+                        <!--                        <h5 class="white-text">Links</h5>-->
                         <ul>
                             <li><a class="grey-text text-lighten-3" ui-sref="index">Home</a></li>
                             <li><a class="grey-text text-lighten-3" ui-sref="packages">Packages</a></li>
@@ -80,8 +80,12 @@
 
 
 
-    <script type="text/javascript" src="scripts/vendor/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="scripts/vendor/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="scripts/vendor/angular.js"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
     <script type="text/javascript" src="scripts/vendor/materialize.min.js"></script>
     <script type="text/javascript" src="scripts/vendor/underscore.js"></script>
     <!-- angular dependencies -->

@@ -1,7 +1,17 @@
 'use strict';
 
+// Initialize the Firebase SDK
+//var config = {
+//    apiKey: "AIzaSyBQRdv_XzONG245r7HliyB5MveKc7_g_z0",
+//    authDomain: "gateaway-backend.firebaseapp.com",
+//    databaseURL: "https://gateaway-backend.firebaseio.com",
+//    projectId: "gateaway-backend",
+//    storageBucket: "gateaway-backend.appspot.com",
+//    messagingSenderId: "964137106288"
+//};
+//firebase.initializeApp(config);
 
-var gateAway_app = angular.module('gateawayApp', ['ngStorage', 'ngSanitize', 'ui.router', 'ui.materialize']);
+var gateAway_app = angular.module('gateawayApp', ['ngStorage', 'ngSanitize', 'ui.router', 'ui.materialize', 'firebase']);
 
 gateAway_app.constant('_',
     window._
@@ -31,25 +41,43 @@ gateAway_app.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: 'views/bookings.html',
             controller: 'BookingsCtrl'
         })
-        .state('packages',{
+        .state('packages', {
             url: '/packages',
             templateUrl: 'views/packages.html',
             controller: 'PackagesCtrl'
         });
 });
 
-gateAway_app.controller('InitCtrl', ['$scope', '_', '$http', '$localStorage', '$sessionStorage', function ($scope, _, $http, $localStorage, $sessionStorage) {
+gateAway_app.config(function () {
+    var config = {
+        apiKey: "AIzaSyBQRdv_XzONG245r7HliyB5MveKc7_g_z0",
+        authDomain: "gateaway-backend.firebaseapp.com",
+        databaseURL: "https://gateaway-backend.firebaseio.com",
+        projectId: "gateaway-backend",
+        storageBucket: "gateaway-backend.appspot.com",
+        messagingSenderId: "964137106288"
+    };
+    firebase.initializeApp(config);
+});
+
+gateAway_app.factory('Auth', function ($firebaseAuth) {
+    var auth = $firebaseAuth();
+
+    return auth;
+});
+
+gateAway_app.controller('InitCtrl', ['$scope', '_', '$http', '$localStorage', '$sessionStorage', 'firebase', function ($scope, _, $http, $localStorage, $sessionStorage, firebase) {
     $scope.package = $http.get('scripts/package.json')
         .then(function (response) {
-            return $sessionStorage.package=response.data;
+            return $sessionStorage.package = response.data;
         });
-//    console.log($scope.package);
-//    $sessionStorage.package = $scope.package;
+    //    console.log($scope.package);
+    //    $sessionStorage.package = $scope.package;
     console.log($sessionStorage.package);
     $scope.destination = $http.get('scripts/destination.json')
         .then(function (response) {
-            return $sessionStorage.destination=response.data;
+            return $sessionStorage.destination = response.data;
         });
-    
+
     $sessionStorage.bookings = [];
 }]);
