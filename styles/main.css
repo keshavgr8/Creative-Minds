@@ -1,12 +1,17 @@
-body {
-    height: 480px;
-    width: 320px;
-    overflow-x: hidden;
-    overflow-y: auto;
+@media screen and (min-width: 480px) {
+    .app-wrapper {
+        width: 320px;
+        height: 480px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
 }
-.bold-text{
+
+
+.bold-text {
     font-weight: bolder;
 }
+
 .carousel-caption {
     position: absolute;
     font-size: 25px;
@@ -16,23 +21,28 @@ body {
     color: white;
     margin: 0;
     padding: 80px 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
+
 .top-destinations-carousel {
     height: 275px;
 }
 
+
 /*navbar*/
-.navbar-wrapper{
+
+.navbar-wrapper {
     border-top: none !important;
     border-right: none !important;
     border-left: none !important;
     margin: 0 !important;
 }
-.navbar-inner-wrapper{
+
+.navbar-inner-wrapper {
     width: 100%;
 }
-.navbar-header{
+
+.navbar-header {
     color: #fff;
     background-color: #ee6e73;
     width: 100%;
@@ -42,18 +52,22 @@ body {
     background-color: initial !important;
     border-bottom: initial !important;
 }
-.navbar-links{
+
+.navbar-links {
     padding: 0.5rem !important;
     line-height: 30px;
     background-color: whitesmoke;
 }
-.navbar-links a{
-	color : teal;
+
+.navbar-links a {
+    color: teal;
 }
+
 .logo {
     font-size: 2.1rem;
     font-weight: 100;
 }
+
 .fontawesome {
     font-family: FontAwesome;
 }

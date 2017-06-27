@@ -42,9 +42,14 @@ gateAway_app.config(function ($stateProvider, $urlRouterProvider) {
             controller: 'BookingsCtrl'
         })
         .state('packages', {
-            url: '/packages',
+            url: '/packages/{destinationId}',
             templateUrl: 'views/packages.html',
             controller: 'PackagesCtrl'
+        })
+        .state('destination', {
+            url: '/destination/{destinationId}',
+            templateUrl: 'views/destinations.html',
+            controller: 'DestinationCtrl'
         });
 });
 
@@ -78,6 +83,6 @@ gateAway_app.controller('InitCtrl', ['$scope', '_', '$http', '$localStorage', '$
         .then(function (response) {
             return $sessionStorage.destination = response.data;
         });
-
+    console.log($sessionStorage.destination);
     $sessionStorage.bookings = [];
 }]);

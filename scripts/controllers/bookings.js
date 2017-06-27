@@ -25,7 +25,7 @@ gateAway_app.controller('BookingsCtrl', ['$scope', '_', '$http', '$localStorage'
     //            console.log(error);
     //        });
     //    };
-
+    console.log($scope.email);
     var ref = firebase.database().ref();
     // download the data into a local object
     $scope.data = $firebaseObject(ref);

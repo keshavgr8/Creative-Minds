@@ -1,6 +1,6 @@
 <div ng-controller="PackagesCtrl" ng-cloak>
     <div class="row">
-            <div ng-repeat="package in packages" class="col s12">
+            <div ng-repeat="package in currentPackage" class="col s12">
                 <div class="card small sticky-action">
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" ng-src="{{package.image}}">

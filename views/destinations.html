@@ -1,0 +1,18 @@
+<div ng-controller="DestinationCtrl" ng-cloak>
+    <div class="row" ng-repeat="destination in currentDestination">
+        <div class="col s12">
+            <div class="card">
+                <div class="card-image">
+                    <img ng-src="{{destination.image}}">
+                    <span class="card-title">{{destination.name}}</span>
+                </div>
+                <div class="card-content">
+                    <p>{{destination.description}}</p>
+                </div>
+                <div class="card-action">
+                    <a ui-sref="packages({destinationId : destination.ID})">Book Package</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

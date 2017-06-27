@@ -5,7 +5,7 @@
         "forDays": "4",
         "forNights": "3",
         "cost": "6900",
-        "destinationName": "himachal",
+        "destinationId": "3",
         "isFeatured": true,
         "image": "images/Spiti-Bike-Trip.jpg"
 },
@@ -16,9 +16,9 @@
         "forDays": "5",
         "forNights": "4",
         "cost": "7000",
-        "destinationName": "himachal",
+        "destinationId": "3",
         "isFeatured": false,
-        "image": "images/Spiti-Bike-Trip.jpg"
+        "image": "images/Manli3_19_175_manali_938_410.jpg"
 },
     {
         "ID": 3,
@@ -27,9 +27,9 @@
         "forDays": "3",
         "forNights": "2",
         "cost": "6000",
-        "destinationName": "himachal",
+        "destinationId": "3",
         "isFeatured": false,
-        "image": "images/Spiti-Bike-Trip.jpg"
+        "image": "images/Malana-village-in-Kasol.jpg"
 },
     {
         "ID": 4,
@@ -38,9 +38,9 @@
         "forDays": "3",
         "forNights": "2",
         "cost": "6700",
-        "destinationName": "goa",
+        "destinationId": "2",
         "isFeatured": false,
-        "image": "images/Spiti-Bike-Trip.jpg"
+        "image": "images/exploring-portuguese-goa-beach.jpg"
 },
     {
         "ID": 5,
@@ -49,9 +49,9 @@
         "forDays": "7",
         "forNights": "6",
         "cost": "25000",
-        "destinationName": "kashmir",
+        "destinationId": "4",
         "isFeatured": false,
-        "image": "images/Spiti-Bike-Trip.jpg"
+        "image": "images/nubra-valley.jpg"
 },
     {
         "ID": 6,
@@ -60,9 +60,9 @@
         "forDays": "10",
         "forNights": "9",
         "cost": "37000",
-        "destinationName": "kashmir",
+        "destinationId": "4",
         "isFeatured": false,
-        "image": "images/Spiti-Bike-Trip.jpg"
+        "image": "images/tso-moriri.jpg"
 },
     {
         "ID": 7,
@@ -71,9 +71,9 @@
         "forDays": "3",
         "forNights": "2",
         "cost": "7750",
-        "destinationName": "kerala",
+        "destinationId": "5",
         "isFeatured": false,
-        "image": "images/Spiti-Bike-Trip.jpg"
+        "image": "images/munnar.jpg"
 },
     {
         "ID": 8,
@@ -82,9 +82,9 @@
         "forDays": "3",
         "forNights": "2",
         "cost": "7500",
-        "destinationName": "kerala",
+        "destinationId": "5",
         "isFeatured": false,
-        "image": "images/Spiti-Bike-Trip.jpg"
+        "image": "images/alleppey.jpg"
 },
     {
         "ID": 9,
@@ -93,9 +93,9 @@
         "forDays": "8",
         "forNights": "7",
         "cost": "36900",
-        "destinationName": "kashmir",
+        "destinationId": "4",
         "isFeatured": false,
-        "image": "images/Spiti-Bike-Trip.jpg"
+        "image": "images/jammu-city.jpg"
 },
     {
         "ID": 10,
@@ -104,7 +104,7 @@
         "forDays": "8",
         "forNights": "7",
         "cost": "19696",
-        "destinationName": "andaman",
+        "destinationId": "1",
         "isFeatured": false,
-        "image": "images/Spiti-Bike-Trip.jpg"
+        "image": "images/andaman.jpg"
 }]

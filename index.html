@@ -31,51 +31,55 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <nav>
-        <ul class="collapsible navbar-wrapper" data-collapsible="accordion">
-            <li class="navbar-inner-wrapper">
-                <div class="collapsible-header navbar-header">
-                    <div class="row">
-                        <div class="col s8 offset-s2 center logo">gateaway</div>
-                        <div class="col s2 right"><i class="material-icons">menu</i></div>
+    <div class="app-wrapper">
+        <nav>
+            <ul class="collapsible navbar-wrapper" data-collapsible="accordion">
+                <li class="navbar-inner-wrapper">
+                    <div class="collapsible-header navbar-header">
+                        <div class="row">
+                            <div class="col s8 offset-s2 center logo">gateaway</div>
+                            <div class="col s2 right"><i class="material-icons">menu</i></div>
+                        </div>
                     </div>
-                </div>
-                <!--                <div class="collapsible-body center navbar-links"><span><a ui-sref="index">Home</a></span></div>-->
-                <div class="collapsible-body center navbar-links"><span><a ui-sref="packages">Packages</a></span></div>
-                <div class="collapsible-body center navbar-links"><span><a ui-sref="bookings">My Bookings</a></span></div>
-                <!--                <div class="collapsible-body center navbar-links"><span><a ui-sref="about-us">About Us</a></span></div>-->
-                <div class="collapsible-body center navbar-links"><span><a ui-sref="contact-us">Support</a></span></div>
-            </li>
-        </ul>
-    </nav>
-    <ui-view></ui-view>
-    <footer>
-        <footer class="page-footer flow-text">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12">
-                        <h5 class="white-text">Gateaway Travels LLC</h5>
-                        <p class="grey-text text-lighten-4">104, Shree Shyam Residency, P.No. 14/15 Vaishali Elegance, Gandhi Path, Jaipur</p>
-                    </div>
-                    <div class="col s12">
-                        <!--                        <h5 class="white-text">Links</h5>-->
-                        <ul>
-                            <li><a class="grey-text text-lighten-3" ui-sref="index">Home</a></li>
-                            <li><a class="grey-text text-lighten-3" ui-sref="packages">Packages</a></li>
-                            <li><a class="grey-text text-lighten-3" ui-sref="about-us">About Us</a></li>
-                            <li><a class="grey-text text-lighten-3" ui-sref="contact-us">Support</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright">
+                    <div class="collapsible-body center navbar-links"><span><a ui-sref="index">Home</a></span></div>
+                    <div class="collapsible-body center navbar-links"><span><a ui-sref="destination({destinationId : ''})">Destinations</a></span></div>
+                    <div class="collapsible-body center navbar-links"><span><a ui-sref="packages({destinationId : ''})">Packages</a></span></div>
+                    <div class="collapsible-body center navbar-links"><span><a ui-sref="bookings">My Bookings</a></span></div>
+                    <!--                <div class="collapsible-body center navbar-links"><span><a ui-sref="about-us">About Us</a></span></div>-->
+                    <div class="collapsible-body center navbar-links"><span><a ui-sref="contact-us">Support</a></span></div>
+                </li>
+            </ul>
+        </nav>
+        <ui-view></ui-view>
+        <footer>
+            <footer class="page-footer flow-text">
                 <div class="container">
-                    © 2017 Keshav Saini
-                    <a class="grey-text text-lighten-4 right" href="http://www.gritfusion.com">Cheers!</a>
+                    <div class="row">
+                        <div class="col s12">
+                            <h5 class="white-text">Gateaway Travels LLC</h5>
+                            <p class="grey-text text-lighten-4">104, Shree Shyam Residency, P.No. 14/15 Vaishali Elegance, Gandhi Path, Jaipur</p>
+                        </div>
+                        <div class="col s12">
+                            <!--                        <h5 class="white-text">Links</h5>-->
+                            <ul>
+                                <li><a class="grey-text text-lighten-3" ui-sref="index">Home</a></li>
+                                <li><a class="grey-text text-lighten-3" ui-sref="destination({destinationId : ''})">Destinations</a></li>
+                                <li><a class="grey-text text-lighten-3" ui-sref="packages({destinationId : ''})">Packages</a></li>
+                                <li><a class="grey-text text-lighten-3" ui-sref="about-us">About Us</a></li>
+                                <li><a class="grey-text text-lighten-3" ui-sref="contact-us">Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <div class="footer-copyright">
+                    <div class="container">
+                        © 2017 Keshav Saini
+                        <a class="grey-text text-lighten-4 right" href="http://www.gritfusion.com">Cheers!</a>
+                    </div>
+                </div>
+            </footer>
         </footer>
-    </footer>
+    </div>
 
 
 
@@ -100,6 +104,7 @@
     <script src="scripts/controllers/contact-us.js"></script>
     <script src="scripts/controllers/bookings.js"></script>
     <script src="scripts/controllers/packages.js"></script>
+    <script src="scripts/controllers/destinations.js"></script>
     <!-- app scripts -->
 </body>
 
