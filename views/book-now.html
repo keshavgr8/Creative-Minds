@@ -1,0 +1,25 @@
+<div ng-controller="BookNowCtrl" ng-cloak>
+    <div class="row" ng-repeat="package in currentPackage">
+        <div class="col s12">
+            <div class="card">
+                <div class="card-image">
+                    <img ng-src="{{package.image}}">
+                    <span class="card-title">{{package.name}}</span>
+                </div>
+                <div class="card-content">
+                    <p>{{package.description}}</p>
+                    <p>{{package.forDays}}D/{{package.forNights}}N</p>
+                    <p>&#8377;{{package.cost}} Per Person</p>
+                    <div class="input-field">
+                        <input id="persons" type="number" min="1" ng-init="persons = 1" ng-model="persons">
+                        <label for="persons">Enter No. Persons</label>
+                    </div>
+                    <p>Total Cost : &#8377;{{persons*package.cost}}</p>
+                </div>
+                <div ui-sref="thank-you" class="card-action">
+                    <a>Book Package</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

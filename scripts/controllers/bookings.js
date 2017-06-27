@@ -25,18 +25,23 @@ gateAway_app.controller('BookingsCtrl', ['$scope', '_', '$http', '$localStorage'
     //            console.log(error);
     //        });
     //    };
-    console.log($scope.email);
     var ref = firebase.database().ref();
     // download the data into a local object
     $scope.data = $firebaseObject(ref);
     $scope.authObj = $firebaseAuth();
 
-    $scope.signIn = $scope.authObj.$signInWithEmailAndPassword({
-        email: $scope.email,
-        password: $scope.password
-    }).then(function (authData) {
-        console.log("Logged in as:", authData.uid);
-    }).catch(function (error) {
-        console.error("Authentication failed:", error);
-    });
+//    $scope.signIn = $scope.authObj.$signInWithEmailAndPassword($scope.login).then(function (authData) {
+//        console.log("Logged in as:", authData.uid);
+//    }).catch(function (error) {
+//        console.error("Authentication failed:", error);
+//    });
+    $scope.signIn = function(login){
+        $scope.credentials = login;
+        $scope.authObj.$signInWithEmailAndPassword({email:$scope.credentials.email,password:$scope.credentials.password}).then(function (authData) {
+            console.log("Logged in as:", authData.uid);
+        }).catch(function (error) {
+            console.error("Authentication failed:", error);
+        });
+        console.log(login);
+    };
 }]);
