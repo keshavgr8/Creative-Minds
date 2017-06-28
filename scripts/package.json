@@ -1,7 +1,7 @@
 [{
         "ID": "1",
         "name": "Spiti Valley",
-        "description": "Lorem ipsum dolor sit amet",
+        "description": "Nobody describes the Spiti Valley experience better than Rudyard Kipling when he says, “Surely the Gods must live here, this is no place for men.”",
         "forDays": "4",
         "forNights": "3",
         "cost": "6900",
@@ -12,7 +12,7 @@
     {
         "ID": "2",
         "name": "Manali",
-        "description": "Lorem ipsum dolor sit amet",
+        "description": "Surrounded by majestic hills and woody forests, the quaint charm of Manali has captured the world's attention and has become one of the most visited tourist destinations in India.",
         "forDays": "5",
         "forNights": "4",
         "cost": "7000",
@@ -23,7 +23,7 @@
     {
         "ID": "3",
         "name": "Kasol",
-        "description": "Lorem ipsum dolor sit amet",
+        "description": "A destination bestowed with all of nature's blessings, Kasol is known for its Israeli inhabitants, Parvati river, trekking base-camp and Malana.",
         "forDays": "3",
         "forNights": "2",
         "cost": "6000",
@@ -34,7 +34,7 @@
     {
         "ID": "4",
         "name": "Goa",
-        "description": "Lorem ipsum dolor sit amet",
+        "description": "Neatly tucked into the Western coast of India, Goa is the state associated most with touristy beaches, a happening nightlife and over 300-year old Portuguese architecture.",
         "forDays": "3",
         "forNights": "2",
         "cost": "6700",
@@ -45,7 +45,7 @@
     {
         "ID": "5",
         "name": "Nubra Valley",
-        "description": "Lorem ipsum dolor sit amet",
+        "description": "The valley is embellished with Shyok and Nubra river snaking through it and some beautiful monasteries colored with rich shades of golden, red and others.",
         "forDays": "7",
         "forNights": "6",
         "cost": "25000",
@@ -56,7 +56,7 @@
     {
         "ID": "6",
         "name": "Tso Moriri",
-        "description": "Lorem ipsum dolor sit amet",
+        "description": "Moriri Tso is also called the 'mountain lake', owing to the peaks that surround it, towering at a height of 2000 meters, shutting it off from the outside world.",
         "forDays": "10",
         "forNights": "9",
         "cost": "37000",
@@ -67,7 +67,7 @@
     {
         "ID": "7",
         "name": "Munnar",
-        "description": "Lorem ipsum dolor sit amet",
+        "description": "Munnar is an idyllic hill station, famous for its tea estates, exotic scenery, abundance of flora and fauna and craggy peaks.",
         "forDays": "3",
         "forNights": "2",
         "cost": "7750",
@@ -78,7 +78,7 @@
     {
         "ID": "8",
         "name": "Alleppey",
-        "description": "Lorem ipsum dolor sit amet",
+        "description": "Famous for the backwaters in Kerala, the city of Alleppey is also known for its beaches, temples, boat races and Ayurvedic spa and wellness centers.",
         "forDays": "3",
         "forNights": "2",
         "cost": "7500",
@@ -89,7 +89,7 @@
     {
         "ID": "9",
         "name": "Jammu",
-        "description": "Lorem ipsum dolor sit amet",
+        "description": "Popularly known as the \"Paradise on the Earth\" the state is world famous for its scenic splendour, snow-capped mountains, plentiful wildlife, exquisite monuments, hospitable people and local handicraft.",
         "forDays": "8",
         "forNights": "7",
         "cost": "36900",
@@ -100,7 +100,7 @@
     {
         "ID": "10",
         "name": "Andaman",
-        "description": "Lorem ipsum dolor sit amet",
+        "description": "A group of about 600 islands in the Bay of Bengal, Andaman and Nicobar Islands are known for their scenic beaches, dense forests and adventurous water sports.",
         "forDays": "8",
         "forNights": "7",
         "cost": "19696",

@@ -51,6 +51,16 @@ gateAway_app.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: 'views/destinations.html',
             controller: 'DestinationCtrl'
         })
+        .state('book-flight', {
+            url: '/book-flight',
+            templateUrl: 'views/book-flight.html',
+            controller: 'BookFlightCtrl'
+        })
+        .state('book-hotel', {
+            url: '/book-hotel',
+            templateUrl: 'views/book-hotel.html',
+            controller: 'BookHotelCtrl'
+        })
         .state('book-now', {
             url: '/book-now/{packageId}',
             templateUrl: 'views/book-now.html',

@@ -5,24 +5,10 @@
                 <div class="card">
                     <div class="card-content grey lighten-4">
                         <div id="auth">
+                            <p class="center">Sign in with your Google account.</p>
+                            <br>
                             <div class="row">
-                                <div class="col s12">
-                                    <div class="input-field">
-                                        <input ng-model="login.email" id="auth-email" type="email" class="validate">
-                                        <label for="auth-email">Email</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col s12">
-                                    <div class="input-field">
-                                        <input ng-model="login.password" id="auth-pass" type="password" class="validate">
-                                        <label for="auth-pass">Password</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div ng-click="signIn(login)" class="col s12 waves-effect waves-light btn center-align">Sign In / Sign Up</div>
+                                <div ng-click="signIn(login)" class="col s12 waves-effect waves-light btn center-align">Sign In</div>
                             </div>
                         </div>
                     </div>
@@ -40,16 +26,67 @@
             </ul>
             <ul class="collapsible" data-collapsible="accordion">
                 <li>
-                    <div class="collapsible-header">First</div>
-                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    <div class="collapsible-header">Flights</div>
+                    <div class="collapsible-body">
+                        <span>
+                            <ul class="collection">
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle">send</i>
+                                    <span class="title">#12368</span>
+                                    <p>Jaipur to Delhi <br> 01/02/2017
+                                    </p>
+                                </li>
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle">send</i>
+                                    <span class="title">#12594</span>
+                                    <p>Jaipur to Pune <br> 21/12/2017
+                                    </p>
+                                </li>
+                            </ul>
+                        </span>
+                    </div>
                 </li>
                 <li>
-                    <div class="collapsible-header">Second</div>
-                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    <div class="collapsible-header">Hotels</div>
+                    <div class="collapsible-body">
+                        <span>
+                            <ul class="collection">
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle">hotel</i>
+                                    <span class="title">#22395</span>
+                                    <p>Regenta Central, Jaipur <br> 01/02/2017
+                                    </p>
+                                </li>
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle">hotel</i>
+                                    <span class="title">#22978</span>
+                                    <p>Taj Vivanta <br> 21/12/2017
+                                    </p>
+                                </li>
+                            </ul>
+                        </span>
+                    </div>
                 </li>
                 <li>
-                    <div class="collapsible-header">Third</div>
-                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    <div class="collapsible-header">Tour Packages</div>
+                    <div class="collapsible-body">
+                        <span>
+                            <ul class="collection">
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle">terrain</i>
+                                    <span class="title">#32689</span>
+                                    <p>Spiti Valley <br> 01/02/2017
+                                    </p>
+                                </li>
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle">terrain</i>
+                                    <span class="title">#32748</span>
+                                    <p>Munnar <br> 21/12/2017
+                                    </p>
+                                </li>
+                            </ul>
+                        </span>
+                    </div>
                 </li>
             </ul>
         </div>
